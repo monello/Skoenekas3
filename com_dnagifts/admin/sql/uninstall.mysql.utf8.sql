@@ -1,0 +1,32 @@
+DROP VIEW IF EXISTS `#__dnagifts_calculate_testprogress`;
+DROP VIEW IF EXISTS `#__dnagifts_churchlist`;
+DROP VIEW IF EXISTS `#__dnagifts_citylist`;
+DROP VIEW IF EXISTS `#__dnagifts_count_testanswers`;
+DROP VIEW IF EXISTS `#__dnagifts_count_testquestions`;
+DROP VIEW IF EXISTS `#__dnagifts_list_all_answers`;
+DROP VIEW IF EXISTS `#__dnagifts_list_all_testbuttons`;
+DROP VIEW IF EXISTS `#__dnagifts_list_testbuttons`;
+DROP VIEW IF EXISTS `#__dnagifts_list_testquestions`;
+DROP VIEW IF EXISTS `#__dnagifts_pastorlist`;
+
+DROP TABLE IF EXISTS `#__dnagifts_guages_svg`;
+DROP TABLE IF EXISTS `#__dnagifts_healthchecks`;
+DROP TABLE IF EXISTS `#__dnagifts_institution`;
+DROP TABLE IF EXISTS `#__dnagifts_lnk_test_buttonset`;
+DROP TABLE IF EXISTS `#__dnagifts_lnk_test_question`;
+DROP TABLE IF EXISTS `#__dnagifts_lnk_user_institution`;
+DROP TABLE IF EXISTS `#__dnagifts_lnk_user_tests`;
+DROP TABLE IF EXISTS `#__dnagifts_lnk_user_test_answers`;
+DROP TABLE IF EXISTS `#__dnagifts_lst_action`;
+DROP TABLE IF EXISTS `#__dnagifts_lst_countries`;
+DROP TABLE IF EXISTS `#__dnagifts_lst_gift`;
+DROP TABLE IF EXISTS `#__dnagifts_lst_institution_type`;
+DROP TABLE IF EXISTS `#__dnagifts_lst_language_codes`;
+DROP TABLE IF EXISTS `#__dnagifts_lst_user_type`;
+DROP TABLE IF EXISTS `#__dnagifts_option_button`;
+DROP TABLE IF EXISTS `#__dnagifts_pretest_info`;
+DROP TABLE IF EXISTS `#__dnagifts_question`;
+DROP TABLE IF EXISTS `#__dnagifts_test`;
+DROP TABLE IF EXISTS `#__dnagifts_testresults`;
+DROP TABLE IF EXISTS `#__dnagifts_user_activity`;
+
