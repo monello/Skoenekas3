@@ -1,0 +1,1 @@
+-- empty SQL. used to align version in extensions table

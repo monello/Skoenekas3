@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.2.0" method="upgrade">
+ 
+	<!-- MRL: the installer will use the following field to create the component name in the database! "DNA Gifts" will become "com_dnagifts" -->
+	<name>COM_DNAGIFTS</name>
+	
+	<!-- The following elements are optional and free of formatting constraints -->
+	<creationDate>February 2016</creationDate>
+	<author>Morné Louw</author>
+	<authorEmail>louw.morne@gmail.com</authorEmail>
+	<authorUrl>http://www.dnagifts.nnet</authorUrl>
+	<copyright>Copyright (C) DNA Gifts</copyright>
+	<license>License Info</license>
+	
+	<!--  The version string is recorded in the components table -->
+	<version>2</version>
+	
+	<!-- The description is optional and defaults to the name -->
+	<description>COM_DNAGIFTS_DESCRIPTION</description>
+	
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<update> <!-- Runs on update; New since J2.5 -->
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+ 
+	<!-- Site Main File Copy Section -->
+	<!-- Note the folder attribute: This attribute describes the folder
+		to copy FROM in the package to install therefore files copied
+		in this section are copied from /site/ in the package -->
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>controller.php</filename>
+		<filename>dnagifts.php</filename>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>language</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+		<folder>reports</folder>
+	</files>
+	<media destination="com_dnagifts" folder="media">
+		<filename>index.html</filename>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>img</folder>
+	</media>
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu link='index.php?option=com_dnagifts'>DNA Gifts</menu>
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder
+			to copy FROM in the package to install therefore files copied
+			in this section are copied from /admin/ in the package -->
+		<files folder="admin">
+			<!-- Admin Main File Copy Section -->
+			<filename>index.html</filename>
+			<filename>dnagifts.php</filename>
+			<filename>controller.php</filename>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<folder>language</folder>
+		</files>
+	</administration>
+ 
+</extension>
